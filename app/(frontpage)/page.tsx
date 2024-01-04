@@ -4,14 +4,17 @@ import FeatureCards from "../../components/pages/projects";
 import Overview from "../../components/pages/overview";
 import OpenSource from "../../components/pages/opensource";
 import Footer from "../../components/layout/footer";
-import Head from "next/head";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nathan Garcia",
+  description: "Portfolio Website",
+};
 
 export default function Home() {
   return (
     <main>
-      <Head>
-        <title>Nathan Garcia</title>
-      </Head>
       <Hero />
       <FeatureCards />
       <Footer />
