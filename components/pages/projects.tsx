@@ -73,7 +73,7 @@ function Cards() {
           </div>
           <CardDescription>
             A mobile app that effortlessly schedule and coordinates board game
-            nights with friends
+            nights with friends.
           </CardDescription>
         </CardContent>
       </Card>
