@@ -14,6 +14,7 @@ import {
 } from "react";
 import { UrlObject } from "url";
 import { ModeToggle } from "../mode-toggle";
+import { NavItem } from "../../types";
 
 export default function Navbar() {
   return (
@@ -37,23 +38,7 @@ export default function Navbar() {
             style={{ width: "100%", maxWidth: "20rem" }}
           >
             <ul className="flex font-medium items-center opacity-60 flex-row space-x-6 space-y-0">
-              {navLinks.data.map(function (
-                item: {
-                  href: string | UrlObject;
-                  disabled: any;
-                  title:
-                    | string
-                    | number
-                    | boolean
-                    | ReactElement<any, string | JSXElementConstructor<any>>
-                    | Iterable<ReactNode>
-                    | ReactPortal
-                    | PromiseLikeOfReactNode
-                    | null
-                    | undefined;
-                },
-                index: Key | null | undefined
-              ) {
+              {navLinks.data.map(function (item: NavItem, index: number) {
                 return (
                   item.href && (
                     <Link
