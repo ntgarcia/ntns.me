@@ -7,8 +7,8 @@ export const siteConfig: SiteConfig = {
   description: "My Portfolio Website",
   keywords: ["Next.js", "React", "Tailwind CSS", "Radix UI", "shadcn/ui"],
   url: {
-    base: env.NEXT_PUBLIC_APP_URL,
     author: "",
+    base: "",
   },
   links: {
     github: "https://github.com/ntgarcia",
