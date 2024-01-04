@@ -72,7 +72,7 @@ export default function HeroHeader() {
               <FaGithub className="text-2xl fill-zinc-600 dark:fill-zinc-300" />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/nathanlgarcia/"
+              href="https://www.linkedin.com/in/ntns/"
               className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
             >
               <FaLinkedin className="text-2xl fill-zinc-600 dark:fill-zinc-300" />
