@@ -9,7 +9,7 @@ export default function HeroHeader() {
       <section className="flex items-center justify-center space-y-8 py-12 md:space-y-16 md:pt-10 lg:py-32 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
         <div className="container flex max-w-[64rem] flex-col items-start gap-10 text-left">
           <p
-            className="inline-block flex-wrap pb-8 font-medium leading-11 text-pretty text-5xl bg-clip-text text-transparent bg-gradient-to-r
+            className="inline-block flex-wrap pb-8 font-medium leading-11 text-pretty text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
           >
             Hi, I'm Nathan

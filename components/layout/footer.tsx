@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="flex flex-row justify-between mx-auto w-full max-w-screen-xl p-10 md:p-20">
         <div className="flex flex-col place-content-start">
           <h1
-            className="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r
+            className="text-2xl sm:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
           >
             Get in Touch!
           </h1>
-          <ul className="my-6 flex flex-wrap gap-6 items-center text-m mb-4 underline">
+          <ul className="my-6 flex flex-wrap flex-col sm:flex-row gap-3 sm:gap-6 items-start sm:items-center text-sm md:text-base mb-4 underline">
             <Link href={siteConfig.links.github}>
               <h1 className=" hover:text-muted-foreground">Github↗︎</h1>
             </Link>
@@ -24,9 +24,9 @@ export default function Footer() {
             </Link>
           </ul>
         </div>
-        <div className="flex items-start mt-2">
+        <div className="flex flex-wrap items-start md:justify-end flex-col sm:flex-row mt-2 w-1/3 sm:w-1/2">
           <div className="block text-right">
-            <h1 className="text-m mb-5">
+            <h1 className="text-sm md:text-base mb-5 text-pretty">
               Designed and coded by Nathan Garcia ✨
             </h1>
             <p className="text-sm text-muted-foreground font-medium">

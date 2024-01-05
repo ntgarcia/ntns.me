@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Bio() {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-16 justify-center space-y-8 py-12 md:space-y-16 md:pt-10 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
-      <div className="w-full md:w-2/5">
+    <section className="flex flex-col md:flex-row gap-8 lg:gap-16 justify-center space-y-8 py-12 md:mt-10 mb-20 lg:space-y-16 lg:pt-10 relative px-4 lg:px-8 lg:max-w-7xl mx-auto">
+      <div className="w-full md:w-2/5 px-4">
         <h1 className="inline-block flex-wrap pb-8 font-medium leading-11 text-pretty text-5xl ">
           <span
             className="bg-clip-text text-transparent bg-gradient-to-r
