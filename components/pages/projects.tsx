@@ -1,26 +1,18 @@
-import HeadingText from "../heading-text";
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "../../config/site";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
-import { RxActivityLog } from "react-icons/rx";
-import { BsFire, BsLayoutTextWindowReverse } from "react-icons/bs";
-import { TbDeviceAnalytics } from "react-icons/tb";
+import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 
 function Cards() {
   return (
     <>
       <Card className="flex flex-grow flex-col gap-4 p-8 text-left dark:bg-primary">
-        <Link href="/#boga" target="_blank">
+        <Link
+          href="/#boga"
+          target="_blank"
+          className="overflow-hidden rounded-xl mb-4"
+        >
           <Image
-            className="rounded-lg transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300"
+            className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400"
             src="/images/boga-cover.png"
             alt="BOGA Cover"
             width="0"
@@ -48,9 +40,13 @@ function Cards() {
         </CardContent>
       </Card>
       <Card className="flex flex-grow flex-col gap-4 p-8 text-left dark:bg-primary">
-        <Link href="/#cail" target="_blank">
+        <Link
+          href="/#cail"
+          target="_blank"
+          className="overflow-hidden rounded-xl mb-4"
+        >
           <Image
-            className="rounded-lg transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300"
+            className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300 bg-gradient-to-r from-blue-300 via-green-200 to-yellow-300"
             src="/images/cail-cover.png"
             alt="CAIL Cover"
             width="0"
@@ -67,13 +63,16 @@ function Cards() {
             >
               CAIL
             </CardTitle>
-            <p className="rounded-2xl bg-accent mt-0.5 px-4 py-1.5 text-sm font-medium">
+            {/* <p className="rounded-2xl bg-accent mt-0.5 px-4 py-1.5 text-sm font-medium">
               Capstone
+            </p> */}
+            <p className="text-green-500 mt-0.5 py-1.5 text-sm font-medium">
+              ● IN PROGRESS
             </p>
           </div>
           <CardDescription>
-            A mobile app that effortlessly schedule and coordinates board game
-            nights with friends.
+            Enable communication and coordination between students and seniors
+            in assisted living facilities.
           </CardDescription>
         </CardContent>
       </Card>
@@ -81,9 +80,9 @@ function Cards() {
   );
 }
 
-export default function FeatureCards() {
+export default function Projects() {
   return (
-    <section className="bg-secondary" id="features">
+    <section className="bg-secondary" id="projects">
       <div className="container space-y-8 py-12 text-center lg:py-20">
         {/* <HeadingText subtext="Design Concepts & Case Studies">
           Projects
