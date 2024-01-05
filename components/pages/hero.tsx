@@ -64,26 +64,7 @@ export default function HeroHeader() {
             design systems. Calgary-based and currently studying at SAIT.
           </p>
 
-          <div className="sm:space-x-3 space-x-1">
-            <Link
-              href={siteConfig.links.github}
-              className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
-            >
-              <FaGithub className="text-2xl fill-zinc-600 dark:fill-zinc-300" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/ntns/"
-              className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
-            >
-              <FaLinkedin className="text-2xl fill-zinc-600 dark:fill-zinc-300" />
-            </Link>
-            <Link
-              href="mailto:n8g423@gmail.com"
-              className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
-            >
-              <IoMail className="text-2xl fill-zinc-600 dark:fill-zinc-300" />
-            </Link>
-          </div>
+          <div className="sm:space-x-3 space-x-1"></div>
         </div>
         {/* <div className="mx-auto max-w-6xl px-10 lg:px-12 flex">
           <div className="rounded-full bg-slate-900/5 p-2 ring-1 ring-inset ring-slate-900/10 dark:bg-slate-100/5 dark:ring-slate-100/10 lg:rounded-full lg:p-4">
