@@ -71,7 +71,7 @@ export default function Navbar() {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <span className="ml-3">
+                  <span className="ml-0 sm:ml-3">
                     <ModeToggle />
                   </span>
                 </NavigationMenuItem>
