@@ -59,16 +59,21 @@ export default function Navbar() {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
+                  <Link
+                    href="/Nathan_Garcia-Resume_2024.pdf"
+                    passHref
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
                       Resume
-                    </NavigationMenuLink>
+                    </span>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <ModeToggle />
+                  <span className="ml-3">
+                    <ModeToggle />
+                  </span>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>

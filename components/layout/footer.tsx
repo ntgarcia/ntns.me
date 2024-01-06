@@ -13,20 +13,20 @@ export default function Footer() {
             Get in Touch!
           </h1>
           <ul className="my-6 flex flex-wrap flex-col sm:flex-row gap-3 sm:gap-6 items-start sm:items-center text-sm md:text-base mb-4 underline">
-            <Link href={siteConfig.links.github}>
+            <Link href={siteConfig.links.github} target="_blank">
               <h1 className=" hover:text-muted-foreground">Github↗︎</h1>
             </Link>
-            <Link href="https://www.linkedin.com/in/ntns/">
+            <Link href="https://www.linkedin.com/in/ntns/" target="_blank">
               <h1 className=" hover:text-muted-foreground">LinkedIn↗︎</h1>
             </Link>
-            <Link href="mailto:hello@ntns.me">
+            <Link href="mailto:hello@ntns.me" target="_blank">
               <h1 className=" hover:text-muted-foreground">Contact↗︎</h1>
             </Link>
           </ul>
         </div>
         <div className="flex flex-wrap items-start md:justify-end flex-col sm:flex-row mt-2 w-1/3 sm:w-1/2">
           <div className="block text-right">
-            <h1 className="text-sm md:text-base mb-5 text-pretty">
+            <h1 className="text-sm text-muted-foreground font-medium md:text-base mb-5 text-pretty">
               Designed and coded by Nathan Garcia ✨
             </h1>
             <p className="text-sm text-muted-foreground font-medium">

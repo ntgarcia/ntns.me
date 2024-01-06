@@ -1,5 +1,7 @@
 import { ImageFrame } from "../image-frame";
 import Image from "next/image";
+import { siteConfig } from "../../config/site";
+import Link from "next/link";
 
 export default function Bio() {
   return (
@@ -14,21 +16,21 @@ export default function Bio() {
           </span>{" "}
           👋
         </h1>
-        <div className="flex flex-col gap-4 leading-7">
+        <div className="flex flex-col gap-4 leading-7 text-muted-foreground">
           <p>
-            I'm Nathan, a student at SAIT studying Software Development. Born in
-            the Philippines, and raised in Los Angeles before moving to Canada,
-            I've always had a passion for the arts. Growing up, I became more
-            attentive to great design that enhances experiences around me,
-            naturally gravitating to anything forward thinking and innovative.
+            I'm Nathan, a product designer studying software development at
+            SAIT. Fueled by a passion for UI/UX and graphic design, I've honed
+            these skills into the realm of product design. My focus is on
+            seamlessly integrating creative aesthetics with sustainable
+            functionalities. Eager to contribute innovative, user-centric
+            solutions, I actively engage in every design stage, from concept to
+            prototyping.
           </p>
           <p>
-            In my Software Development journey, I grew enamored in UI/UX design
-            and graphic design. I knew I wanted to refine these core values into
-            product design, where I can combine creative design aesthetics with
-            thoughtful and sustainable functionalities. Eager to contribute
-            innovative, user-centric solutions, I immerse myself in every stage
-            of the design process, from concept to prototyping.
+            Born in the Philippines, and raised in Los Angeles before moving to
+            Canada, I've always had a passion for the arts. Growing up, I became
+            more attentive to great design that enhances experiences around me,
+            naturally gravitating to anything forward thinking and innovative.
           </p>
           <p>
             In my spare time you'll likely find me hitting the gym, gaming,
@@ -41,6 +43,18 @@ export default function Bio() {
             </a>
             ).
           </p>{" "}
+          <p>—</p>
+          <ul className="text-foreground my-6 flex flex-wrap flex-row gap-3 sm:gap-6 items-start sm:items-center text-sm md:text-base mb-4 underline">
+            <Link href="/Nathan_Garcia-Resume_2024.pdf" target="_blank">
+              <h1 className=" hover:text-muted-foreground">Resume↗︎</h1>
+            </Link>
+            <Link href="https://www.linkedin.com/in/ntns/" target="_blank">
+              <h1 className=" hover:text-muted-foreground">LinkedIn↗︎</h1>
+            </Link>
+            <Link href="mailto:hello@ntns.me" target="_blank">
+              <h1 className=" hover:text-muted-foreground">Contact↗︎</h1>
+            </Link>
+          </ul>
         </div>
       </div>
       <div className="w-full md:w-2/5">
