@@ -2,12 +2,18 @@
 
 import { Avatar } from "../ui/avatar";
 import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { motion } from "framer-motion";
 
 export default function HeroHeader() {
   return (
     <>
-      <section className="flex items-center justify-center space-y-8 py-12 md:space-y-16 md:pt-10 lg:py-32 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
-        <div className="container flex max-w-[64rem] flex-col items-start gap-10 text-left">
+      <section className="flex items-center justify-center space-y-8 py-12 md:py-32 lg:py-64 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: "10%" }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="container flex max-w-[64rem] flex-col items-start gap-10 text-left"
+        >
           <p
             className="inline-block flex-wrap pb-8 font-medium leading-11 text-pretty text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
@@ -23,18 +29,28 @@ export default function HeroHeader() {
             design systems.
           </p>
           <div className="w-full flex gap-y-8 justify-between flex-col md:flex-row">
-            <div className="w-full md:w-2/5">
+            <motion.div
+              initial={{ opacity: 0, y: "10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="w-full md:w-2/5"
+            >
               <h1 className="font-semibold pb-2 text-muted-foreground">
                 Currently
               </h1>
               <p>Finishing Software Development at SAIT</p>
-            </div>
-            <div className="w-full md:w-2/5">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: "10%" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="w-full md:w-2/5"
+            >
               <h1 className="font-semibold pb-2 text-muted-foreground">Past</h1>
               <p>Former Intern at Alberta Health Services IT</p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
