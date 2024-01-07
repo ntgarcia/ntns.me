@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-start md:justify-end flex-col sm:flex-row mt-2 w-1/3 sm:w-1/2">
           <div className="block text-right">
             <h1 className="text-sm text-muted-foreground font-medium md:text-base mb-5 text-pretty">
-              Designed and coded by Nathan Garcia ✨
+              Designed and coded by yours truly ✨
             </h1>
             <p className="text-sm text-muted-foreground font-medium">
               {" "}

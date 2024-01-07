@@ -25,8 +25,8 @@ export default function HeroHeader() {
                 <AvatarFallback>NT</AvatarFallback>
               </Avatar>
             </a>
-            a full stack product designer with a passion for creating engaging
-            design systems.
+            a Calgary-based product designer with a passion for creating
+            engaging design systems.
           </p>
           <div className="w-full flex gap-y-8 justify-between flex-col md:flex-row">
             <motion.div

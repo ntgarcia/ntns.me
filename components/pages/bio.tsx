@@ -63,7 +63,7 @@ export default function Bio() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-foreground my-6 flex flex-wrap flex-row gap-3 sm:gap-6 items-start sm:items-center text-sm md:text-base mb-4 underline"
           >
-            <Link href="/Nathan_Garcia-Resume_2024.pdf" target="_blank">
+            <Link href="/Nathan_Garcia_Resume_2024.pdf" target="_blank">
               <h1 className=" hover:text-muted-foreground">Resume↗︎</h1>
             </Link>
             <Link href="https://www.linkedin.com/in/ntns/" target="_blank">
@@ -78,7 +78,7 @@ export default function Bio() {
       <motion.div
         initial={{ opacity: 0, y: "10%" }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.6 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
         className="w-full md:w-2/5"
       >
         <ImageFrame>

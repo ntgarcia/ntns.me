@@ -60,7 +60,7 @@ export default function Navbar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link
-                    href="/Nathan_Garcia-Resume_2024.pdf"
+                    href="/Nathan_Garcia_Resume_2024.pdf"
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
