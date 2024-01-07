@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { motion } from "framer-motion";
 import HeadingText from "../heading-text";
 
+import { MouseFollower, UpdateFollower } from "react-mouse-follower";
+
 export default function Projects() {
   return (
     <section className="bg-secondary" id="projects">
@@ -33,7 +35,7 @@ export default function Projects() {
                 <CardContent className="flex gap-4 flex-col place-content-center">
                   <div className="flex gap-4">
                     <CardTitle
-                      className="text-3xl bg-clip-text text-transparent bg-gradient-to-r
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
                     >
                       BOGA
@@ -70,7 +72,7 @@ export default function Projects() {
                 <CardContent className="flex gap-4 flex-col place-content-center">
                   <div className="flex gap-4">
                     <CardTitle
-                      className="text-3xl bg-clip-text text-transparent bg-gradient-to-r
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
                     >
                       Placeholder
@@ -108,7 +110,7 @@ export default function Projects() {
                 <CardContent className="flex gap-4 flex-col place-content-center">
                   <div className="flex gap-4">
                     <CardTitle
-                      className="text-3xl bg-clip-text text-transparent bg-gradient-to-r
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
                     >
                       osu! Mousepad
@@ -144,7 +146,7 @@ export default function Projects() {
                 <CardContent className="flex gap-4 flex-col place-content-center">
                   <div className="flex gap-4">
                     <CardTitle
-                      className="text-3xl bg-clip-text text-transparent bg-gradient-to-r
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
                     >
                       CAIL

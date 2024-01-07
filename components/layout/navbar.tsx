@@ -17,7 +17,10 @@ import { navLinks } from "../../config/links";
 import { ModeToggle } from "../mode-toggle";
 import { NavItem } from "../../types";
 
+import { MouseFollower, UpdateFollower } from "react-mouse-follower";
+
 export default function Navbar() {
+  const mouseOptions = { backgroundColor: "#209CEE", scale: 10 };
   return (
     <header className="select-none sticky top-0 backdrop-filter bg-background/70 backdrop-blur-md z-10 border-b">
       <nav className="mx-auto flex items-center justify-between px-8 lg:max-w-7xl">
