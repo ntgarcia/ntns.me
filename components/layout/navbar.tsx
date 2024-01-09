@@ -13,6 +13,17 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+import { FiMenu } from "react-icons/fi";
+
 import { navLinks } from "../../config/links";
 import { ModeToggle } from "../mode-toggle";
 import { NavItem } from "../../types";
@@ -20,7 +31,6 @@ import { NavItem } from "../../types";
 import { MouseFollower, UpdateFollower } from "react-mouse-follower";
 
 export default function Navbar() {
-  const mouseOptions = { backgroundColor: "#209CEE", scale: 10 };
   return (
     <header className="select-none sticky top-0 backdrop-filter bg-background/70 backdrop-blur-md z-10 border-b">
       <nav className="mx-auto flex items-center justify-between px-8 lg:max-w-7xl">
@@ -36,7 +46,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="block">
+        <div className="hidden sm:block">
           <div
             className="left-0 right-0 z-10 m-auto justify-self-center rounded-md static mt-0 p-0"
             style={{ width: "100%", maxWidth: "20rem" }}
@@ -81,6 +91,45 @@ export default function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
           </div>
+        </div>
+        <div className="block sm:hidden">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-xl">
+              <FiMenu />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link href="/" passHref rel="noopener noreferrer">
+                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                    Work
+                  </span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/about" passHref rel="noopener noreferrer">
+                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                    About
+                  </span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/Nathan_Garcia_Resume_2024.pdf"
+                  passHref
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                    Resume
+                  </span>
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <span className="ml-5">
+            <ModeToggle />
+          </span>
         </div>
       </nav>
     </header>

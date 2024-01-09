@@ -6,6 +6,8 @@ import { useTheme } from "next-themes";
 
 import { Button } from "./ui/button";
 
+import { MouseFollower, UpdateFollower } from "react-mouse-follower";
+
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
@@ -25,6 +27,7 @@ export function ModeToggle() {
           theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
         }`}
       />
+
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
