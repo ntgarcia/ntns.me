@@ -3,11 +3,18 @@
 import Image from "next/image";
 import HeadingText from "../../../heading-text";
 import { Separator } from "@/components/ui/separator";
+import { motion } from "framer-motion";
 
 export default function Problem() {
   return (
     <section className="bg-secondary flex flex-col md:flex-row gap-8 lg:gap-16 relative">
-      <div className="lg:max-w-7xl mx-auto py-20 px-20 justify-center space-y-8 lg:space-y-16">
+      <motion.div
+        initial={{ opacity: 0, y: "10%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="lg:max-w-7xl mx-auto py-20 px-20 justify-center space-y-8 lg:space-y-16"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
           <HeadingText className="bg-clip-text">Problem</HeadingText>
           <p>
@@ -25,7 +32,7 @@ export default function Problem() {
             members, it enables equal and fair workload.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

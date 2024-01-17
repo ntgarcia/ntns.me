@@ -4,7 +4,7 @@ import Bio from "../../components/pages/bio";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About - Nathan Garcia",
   description: "About Me",
 };
 
