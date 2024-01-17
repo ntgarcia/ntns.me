@@ -22,6 +22,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 import { FiMenu } from "react-icons/fi";
 
 import { navLinks } from "../../config/links";
@@ -93,39 +102,36 @@ export default function Navbar() {
           </div>
         </div>
         <div className="block sm:hidden">
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-xl">
+          <Sheet>
+            <SheetTrigger className="text-xl">
               <FiMenu />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link href="/" passHref rel="noopener noreferrer">
-                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
-                    Work
-                  </span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/about" passHref rel="noopener noreferrer">
-                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
-                    About
-                  </span>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/Nathan_Garcia_Resume_2024.pdf"
-                  passHref
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
-                    Resume
-                  </span>
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            </SheetTrigger>
+            <SheetContent
+              side="top"
+              className="grid place-content-center text-center gap-10"
+            >
+              <Link href="/" passHref rel="noopener noreferrer">
+                <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                  Work
+                </span>
+              </Link>
+              <Link href="/about" passHref rel="noopener noreferrer">
+                <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                  About
+                </span>
+              </Link>
+              <Link
+                href="/Nathan_Garcia_Resume_2024.pdf"
+                passHref
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:underline hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-50">
+                  Resume
+                </span>
+              </Link>
+            </SheetContent>
+          </Sheet>
 
           <span className="ml-5">
             <ModeToggle />

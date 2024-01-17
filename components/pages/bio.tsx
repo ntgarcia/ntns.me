@@ -31,19 +31,18 @@ export default function Bio() {
           className="flex flex-col gap-4 leading-7 text-muted-foreground"
         >
           <p>
-            I'm Nathan, a product designer studying software development at
-            SAIT. Fueled by a passion for UI/UX and graphic design, I've honed
-            these skills into the realm of product design. My focus is on
-            seamlessly integrating creative aesthetics with sustainable
-            functionalities. Eager to contribute innovative, user-centric
-            solutions, I actively engage in every design stage, from concept to
-            prototyping.
+            I'm Nathan, currently pursuing a degree in software development at
+            SAIT. My journey has been fueled by a deep interest in coding and
+            data analysis, where I've immersed myself in the intricacies of
+            programming. My focus lies in crafting efficient algorithms and
+            data-driven solutions.
           </p>
           <p>
-            Born in the Philippines, and raised in Los Angeles before moving to
-            Canada, I've always had a passion for the arts. Growing up, I became
-            more attentive to great design that enhances experiences around me,
-            naturally gravitating to anything forward thinking and innovative.
+            Having roots in the Philippines and growing up in Los Angeles before
+            settling in Canada, my diverse background has instilled in me a
+            passion for problem-solving through technology. From an early age, I
+            found myself drawn to the world of coding and data, fascinated by
+            its potential to shape and enhance our daily lives.
           </p>
           <p>
             In my spare time you'll likely find me hitting the gym, gaming,

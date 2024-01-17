@@ -23,7 +23,10 @@ export default function Projects() {
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col-2 gap-10"
             >
-              <Link href="/boga" className=" rounded-xl mb-5 w-1/2">
+              <Link
+                href="/boga"
+                className=" rounded-xl mb-5 md:w-1/2 bg-secondary"
+              >
                 <UpdateFollower mouseOptions={hoverLink}>
                   <Image
                     src="/images/boga-cover.svg"
@@ -35,7 +38,7 @@ export default function Projects() {
                 </UpdateFollower>
               </Link>
 
-              <div className="flex flex-col gap-6 mb-5 w-1/2 justify-center">
+              <div className="hidden md:flex flex-col gap-6 mb-5 w-1/2 justify-center">
                 <h1
                   className="text-left text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
@@ -43,7 +46,7 @@ export default function Projects() {
                   Simplifying Board Game Nights with Seamless Scheduling and
                   Coordination
                 </h1>
-                <div className="font-semibold text-muted-foreground flex h-5 items-center space-x-4 text-sm">
+                <div className="flex font-semibold text-muted-foreground h-5 items-center space-x-4 text-sm">
                   <div>Case Study</div>
                   <Separator orientation="vertical" />
                   <div>Product Design</div>
@@ -51,7 +54,7 @@ export default function Projects() {
                   <div>UI/UX</div>
                 </div>
                 <UpdateFollower mouseOptions={hoverLink}>
-                  <Link href="/boga" className="flex justify-start">
+                  <Link href="/boga" className="flex  justify-start">
                     <Button
                       variant="outline"
                       className="w-fit bg-background hover:bg-foreground hover:text-background"
@@ -67,9 +70,62 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="flex flex-col-2"
+              className="flex flex-col-2 gap-10"
             >
-              <Link href="/" className=" rounded-xl mb-5 w-1/2">
+              <Link
+                href="https://getfitness.vercel.app/"
+                passHref
+                target="_blank"
+                className=" rounded-xl mb-5 md:w-1/2 bg-secondary"
+              >
+                <UpdateFollower mouseOptions={hoverLink}>
+                  <Image
+                    src="/images/getfitness-cover.svg"
+                    alt="GetFitness Cover"
+                    width="0"
+                    height="0"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </UpdateFollower>
+              </Link>
+
+              <div className="hidden md:flex flex-col gap-6 mb-5 w-1/2 justify-center">
+                <h1
+                  className="text-left text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
+          from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
+                >
+                  GetFitness App: Streamlining Workout Routines
+                </h1>
+                <div className="flex font-semibold text-muted-foreground h-5 items-center space-x-4 text-sm">
+                  <div>Front-End Development</div>
+                  <Separator orientation="vertical" />
+                  <div>Web Design</div>
+                </div>
+                <UpdateFollower mouseOptions={hoverLink}>
+                  <Link
+                    href="https://getfitness.vercel.app/"
+                    passHref
+                    target="_blank"
+                    className="flex  justify-start"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-fit bg-background hover:bg-foreground hover:text-background"
+                    >
+                      View Website
+                    </Button>
+                  </Link>
+                </UpdateFollower>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex flex-col-2 gap-10"
+            >
+              <Link href="/" className=" rounded-xl mb-5 md:w-1/2 bg-secondary">
                 <UpdateFollower mouseOptions={hoverLink}>
                   <Image
                     src="/images/cail-cover.svg"
@@ -81,7 +137,7 @@ export default function Projects() {
                 </UpdateFollower>
               </Link>
 
-              <div className="flex flex-col gap-6 mb-5 w-1/2 justify-center">
+              <div className="hidden md:flex flex-col gap-6 mb-5 w-1/2 justify-center">
                 <h1
                   className="text-left text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
@@ -91,30 +147,25 @@ export default function Projects() {
                 <div className="font-semibold text-muted-foreground flex h-5 items-center space-x-4 text-sm">
                   <div>Capstone Project</div>
                   <Separator orientation="vertical" />
-                  <div>Product Design</div>
-                  <Separator orientation="vertical" />
-                  <div>UI/UX</div>
+                  <div>Mobile App Development</div>
                 </div>
-                <UpdateFollower mouseOptions={hoverLink}>
-                  <Link href="/" className="flex justify-start">
-                    <Button
-                      variant="outline"
-                      className="w-fit bg-background hover:bg-foreground hover:text-background"
-                    >
-                      View Case Study
-                    </Button>
-                  </Link>
-                </UpdateFollower>
+
+                <Button
+                  variant="outline"
+                  className="w-fit bg-background hover:bg-foreground hover:text-background"
+                >
+                  Work in Progress 🚧
+                </Button>
               </div>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: "10%" }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col-2"
             >
-              <Link href="/" className=" rounded-xl mb-5 w-1/2">
+              <Link href="/" className=" rounded-xl mb-5 md:w-1/2">
                 <UpdateFollower mouseOptions={hoverLink}>
                   <Image
                     src="/images/osu-cover.svg"
@@ -126,7 +177,7 @@ export default function Projects() {
                 </UpdateFollower>
               </Link>
 
-              <div className="flex flex-col gap-6 mb-5 w-1/2 justify-center">
+              <div className="hidden md:flex flex-col gap-6 mb-5 w-1/2 justify-center">
                 <h1
                   className="text-left text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
@@ -151,7 +202,7 @@ export default function Projects() {
                   </Link>
                 </UpdateFollower>
               </div>
-            </motion.div>
+            </motion.div> */}
           </>
         </div>
       </div>

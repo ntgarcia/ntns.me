@@ -13,9 +13,7 @@ export default function HeroHeader() {
   const mouseOptions = { backgroundColor: "#209CEE", scale: 10, zIndex: -1 };
   return (
     <>
-      <section className="z-0 flex items-center justify-center space-y-8 py-12 md:py-40 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
-        <MouseFollower />
-
+      <section className="z-0 flex items-center justify-center space-y-8 py-12 mt-20 relative px-4 md:px-8 lg:max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,18 +22,18 @@ export default function HeroHeader() {
         >
           <UpdateFollower mouseOptions={mouseOptions}>
             <p
-              className="inline-block flex-wrap pb-8 font-semibold leading-11 text-pretty text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r
+              className="inline-block flex-wrap pb-12 font-semibold leading-11 text-pretty text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
             >
-              Hi, I'm Nathan
+              Nathan Garcia
               <a href="/about">
                 <Avatar className="inline-block ml-2 mr-3">
                   <AvatarImage src="/images/hero-image.jpg"></AvatarImage>
                   <AvatarFallback>NT</AvatarFallback>
                 </Avatar>
               </a>
-              a Calgary-based product designer with a passion for creating
-              unique and engaging design systems.
+              <br />
+              Calgary-Based Software Developer
             </p>
             <div className="w-full flex gap-y-8 justify-between flex-col md:flex-row">
               <motion.div
@@ -63,7 +61,7 @@ export default function HeroHeader() {
             </div>
           </UpdateFollower>
           <motion.div
-            className="text-4xl my-20 w-full flex place-content-center"
+            className="text-4xl text-foreground mt-20 w-full flex place-content-center"
             animate={{
               y: [0, -6, 0],
             }}

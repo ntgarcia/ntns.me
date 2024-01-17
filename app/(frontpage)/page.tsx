@@ -5,7 +5,7 @@ import Footer from "../../components/layout/footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nathan Garcia",
+  title: "Nathan Garcia - Product Designer",
   description: "Portfolio Website",
 };
 
