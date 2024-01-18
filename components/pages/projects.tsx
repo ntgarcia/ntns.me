@@ -94,7 +94,7 @@ export default function Projects() {
                   className="text-left text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r
           from-zinc-500 to-zinc-700 dark:from-zinc-400 dark:to-zinc-100"
                 >
-                  GetFitness App: Streamlining Workout Routines
+                  GetFitness: Streamlining Workout Routines
                 </h1>
                 <div className="flex font-semibold text-muted-foreground h-5 items-center space-x-4 text-sm">
                   <div>Front-End Development</div>
@@ -112,7 +112,7 @@ export default function Projects() {
                       variant="outline"
                       className="w-fit bg-background hover:bg-foreground hover:text-background"
                     >
-                      View Website
+                      View Website ↗︎
                     </Button>
                   </Link>
                 </UpdateFollower>
