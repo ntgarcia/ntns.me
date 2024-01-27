@@ -29,7 +29,7 @@ export default function Projects() {
               >
                 <UpdateFollower mouseOptions={hoverLink}>
                   <Image
-                    src="/images/boga-cover.svg"
+                    src="/images/boga/boga-cover.svg"
                     alt="BOGA Cover"
                     width="0"
                     height="0"

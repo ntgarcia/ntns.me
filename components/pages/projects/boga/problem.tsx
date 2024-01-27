@@ -16,7 +16,11 @@ export default function Problem() {
         className="lg:max-w-7xl mx-auto py-20 px-20 justify-center space-y-8 lg:space-y-16"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-          <HeadingText className="bg-clip-text">Problem</HeadingText>
+          <div className="flex flex-row mb-2 gap-3">
+            <div className="text-red-500 text-2xl ">●</div>
+            <HeadingText className="bg-clip-text">Problem</HeadingText>
+          </div>
+
           <p>
             Most scheduling apps are generalized to be a jack of all trades for
             all tasks, while also being a master of none. Scheduling something
@@ -25,7 +29,10 @@ export default function Problem() {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <HeadingText className="bg-clip-text">Solution</HeadingText>
+          <div className="flex flex-row mb-2 gap-3">
+            <div className="text-green-500 text-2xl ">●</div>
+            <HeadingText className="bg-clip-text">Solution</HeadingText>
+          </div>
           <p>
             A modern scheduling app designed specifically for organizing board
             game nights with friends. By automatically delegating tasks between
