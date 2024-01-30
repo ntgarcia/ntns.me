@@ -17,7 +17,7 @@ export default function Header() {
         >
           <Image
             className="mb-12 rounded-xl transition ease-in-out delay-100 duration-300 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400"
-            src="/images/boga-cover.png"
+            src="/images/boga/boga-cover.png"
             alt="BOGA Cover"
             width="0"
             height="0"

@@ -71,7 +71,7 @@ export default function Body() {
         >
           <Image
             className="mb-32 mt-20 rounded-xl border shadow-lg"
-            src="/images/empathy-map.png"
+            src="/images/boga/empathy-map.png"
             alt="Empathy Map"
             width="0"
             height="0"
