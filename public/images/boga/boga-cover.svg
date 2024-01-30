@@ -1,15 +1,15 @@
 <svg width="1440" height="1200" viewBox="0 0 1440 1200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_286_629)">
-<rect x="-168.812" y="288.975" width="442" height="955" rx="32" transform="rotate(-9.21001 -168.812 288.975)" fill="url(#pattern0)"/>
-<rect x="-201.627" y="274.033" width="503" height="988" transform="rotate(-9.21001 -201.627 274.033)" fill="url(#pattern1)"/>
-<rect x="824.219" y="127.961" width="442" height="955" rx="32" transform="rotate(-9.21001 824.219 127.961)" fill="url(#pattern2)"/>
-<rect x="791.404" y="113.02" width="503" height="988" transform="rotate(-9.21001 791.404 113.02)" fill="url(#pattern3)"/>
-<rect x="248.635" y="-279.162" width="442" height="955" rx="32" transform="rotate(-9.21001 248.635 -279.162)" fill="url(#pattern4)"/>
-<rect x="215.82" y="-294.104" width="503" height="988" transform="rotate(-9.21001 215.82 -294.104)" fill="url(#pattern5)"/>
-<rect x="1241.67" y="-440.178" width="442" height="955" rx="32" transform="rotate(-9.21001 1241.67 -440.178)" fill="url(#pattern6)"/>
-<rect x="1208.85" y="-455.119" width="503" height="988" transform="rotate(-9.21001 1208.85 -455.119)" fill="url(#pattern7)"/>
-<rect x="406.768" y="696.098" width="442" height="955" rx="32" transform="rotate(-9.21001 406.768 696.098)" fill="url(#pattern8)"/>
-<rect x="373.953" y="681.156" width="503" height="988" transform="rotate(-9.21001 373.953 681.156)" fill="url(#pattern9)"/>
+<rect x="-49.6855" y="377.168" width="442" height="955" rx="32" transform="rotate(-11.2022 -49.6855 377.168)" fill="url(#pattern0)"/>
+<rect x="-83" y="363.377" width="503" height="988" transform="rotate(-11.2022 -83 363.377)" fill="url(#pattern1)"/>
+<rect x="937.146" y="181.729" width="442" height="955" rx="32" transform="rotate(-11.2022 937.146 181.729)" fill="url(#pattern2)"/>
+<rect x="903.832" y="167.938" width="503" height="988" transform="rotate(-11.2022 903.832 167.938)" fill="url(#pattern3)"/>
+<rect x="347.758" y="-205.137" width="442" height="955" rx="32" transform="rotate(-11.2022 347.758 -205.137)" fill="url(#pattern4)"/>
+<rect x="314.443" y="-218.928" width="503" height="988" transform="rotate(-11.2022 314.443 -218.928)" fill="url(#pattern5)"/>
+<rect x="745.129" y="-787.49" width="442" height="955" rx="32" transform="rotate(-11.2022 745.129 -787.49)" fill="url(#pattern6)"/>
+<rect x="711.814" y="-801.281" width="503" height="988" transform="rotate(-11.2022 711.814 -801.281)" fill="url(#pattern7)"/>
+<rect x="539.699" y="764.035" width="442" height="955" rx="32" transform="rotate(-11.2022 539.699 764.035)" fill="url(#pattern8)"/>
+<rect x="506.385" y="750.244" width="503" height="988" transform="rotate(-11.2022 506.385 750.244)" fill="url(#pattern9)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
