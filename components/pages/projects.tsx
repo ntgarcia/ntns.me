@@ -25,7 +25,7 @@ export default function Projects() {
             >
               <Link
                 href="/boga"
-                className=" rounded-xl mb-5 md:w-1/2 bg-secondary"
+                className="rounded-xl mb-5 md:w-1/2 bg-secondary"
               >
                 <UpdateFollower mouseOptions={hoverLink}>
                   <Image
